@@ -1,15 +1,26 @@
-import React from "react";
-import { View, Text, Button } from "react-native";
+import React, { useState } from "react";
+import { ScrollView, StatusBar, StyleSheet, TouchableOpacity } from "react-native";
+import Card from "./Card/CardReceita";
 
-function HomeScreen( {navigation} ) {
+function HomeScreen( { navigation } ) {
     return(
-        <View>
-            <Text>Tela Principal</Text>
-            <Button 
-                title="Ir para detalhes"
-                onPress={() => navigation.navigate('Detail')}
-            />
-        </View>
+        <ScrollView>
+
+            <StatusBar/>
+
+            <TouchableOpacity activeOpacity={0.8} onPress={ () => navigation.navigate('Detail')}>
+                <Card />
+            </TouchableOpacity>
+
+            <TouchableOpacity activeOpacity={0.8} onPress={ () => navigation.navigate('Detail')}>
+                <Card />
+            </TouchableOpacity>
+
+            <TouchableOpacity activeOpacity={0.8} onPress={ () => navigation.navigate('Detail')}>
+                <Card />
+            </TouchableOpacity>
+
+        </ScrollView>
     );
 }
 
