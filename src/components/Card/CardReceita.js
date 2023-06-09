@@ -27,7 +27,7 @@ export default function Card() {
 
 const estiloCard = StyleSheet.create({
     card: {
-        height: 220,
+        height: 230,
         backgroundColor: "#453C38",
         margin: 15,
         elevation: 2,
@@ -43,8 +43,8 @@ const estiloCard = StyleSheet.create({
     },
 
     foto: {
-        resizeMode : 'cover',
-        height: 155,
+        resizeMode: 'cover',
+        height: 165,
         width: '100%',
         borderBottomLeftRadius: 16,
         borderBottomRightRadius: 16,
@@ -53,10 +53,12 @@ const estiloCard = StyleSheet.create({
 
     tempoDiv: {
         display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
         width: 100,
         backgroundColor: "#D9D9D988",
         opacity: 10,
-        padding: 10,
+        padding: 8,
         borderBottomRightRadius: 16,
         borderTopLeftRadius: 16,
         alignSelf: 'flex-end',
@@ -66,11 +68,14 @@ const estiloCard = StyleSheet.create({
     },
     
     iconTimer: {
-        width: 30,
-        height: 40
+        width: 22,
+        height: 27,
+        marginRight: 8,
     },
 
     tempoTexto: {
+        fontSize: 16,
+        fontWeight: 700,
         color: "#453C38",
         textAlign: 'center'
     },

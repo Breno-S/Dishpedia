@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ScrollView, StatusBar, StyleSheet, TouchableOpacity } from "react-native";
+import { ScrollView, StatusBar, StyleSheet, TouchableOpacity, View, Text } from "react-native";
 import Card from "./Card/CardReceita";
 
 function HomeScreen( { navigation } ) {
@@ -20,8 +20,25 @@ function HomeScreen( { navigation } ) {
                 <Card />
             </TouchableOpacity>
 
+            <View style={estiloHome.Footer}>
+                <Text style={estiloHome.FooterText}>© 2023 Dishpedia </Text>
+            </View>
         </ScrollView>
     );
 }
 
 export default HomeScreen;
+
+const estiloHome = StyleSheet.create({
+    Footer: {
+        marginTop: 15,
+        padding: 10,
+        backgroundColor: '#8C4303',
+    },
+
+    FooterText: {
+        color: '#fff',
+        fontSize: 12,
+        textAlign: 'center',
+    },
+});
