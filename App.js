@@ -5,7 +5,7 @@ import AppNavigator from "./src/components/AppNavigator";
 function App() {
   return(
     <NavigationContainer>
-      <AppNavigator />
+        <AppNavigator />
     </NavigationContainer>
   );
 }

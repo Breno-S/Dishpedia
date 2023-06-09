@@ -1,14 +1,15 @@
 import React from "react";
 import { View, Text, StyleSheet, Image} from "react-native";
 
-export default function Card() {
+export default function Card( { prato } ) {
     return(
         <View style={estiloCard.card}>
             
-            <Text style={estiloCard.nome}>Estrogonofe de Camarão</Text>
+            
+            <Text style={estiloCard.nome}>{ prato.nome }</Text>
             
             <Image 
-                source={require('../../../assets/strogonoff.png')}
+                source={ prato.source }
                 style={estiloCard.foto}
             />
 
@@ -17,7 +18,7 @@ export default function Card() {
                     source={require('../../../assets/icon_timer.png')}
                     style={estiloCard.iconTimer}
                 />
-                <Text style={estiloCard.tempoTexto}>20 min</Text>
+                <Text style={estiloCard.tempoTexto}>{ prato.tempo }</Text>
             </View>
             
          </View>
@@ -68,7 +69,8 @@ const estiloCard = StyleSheet.create({
     },
     
     iconTimer: {
-        width: 22,
+        resizeMode: 'contain',
+        width: 20,
         height: 27,
         marginRight: 8,
     },
