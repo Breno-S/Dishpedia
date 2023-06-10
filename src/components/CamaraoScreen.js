@@ -82,13 +82,13 @@ const estiloDetail = StyleSheet.create({
         margin: 15,
         height: 165,
         borderRadius: 16,
-        backgroundColor: '#fff',
+        backgroundColor: '#000',
         
         shadowColor: '#8C4303',
         shadowOffset: { width: 10, height: 10 },
         shadowOpacity: 0.8,
         shadowRadius: 10,
-        elevation: 8,
+        elevation: 10,
         overflow: 'visible',
     },
 
@@ -143,6 +143,8 @@ const estiloDetail = StyleSheet.create({
         paddingLeft: 30,
         paddingTop: 20,
         paddingBottom: 20,
+        paddingRight: 20,
+        
         margin: 20,
         backgroundColor: '#EFEDED',
         borderRadius: 10,

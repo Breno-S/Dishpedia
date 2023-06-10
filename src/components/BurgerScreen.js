@@ -79,17 +79,21 @@ const estiloDetail = StyleSheet.create({
     },
 
     boxFoto: {
-        padding: 15,
+        margin: 15,
+        height: 165,
+        borderRadius: 16,
+        backgroundColor: '#000',
+        
         shadowColor: '#8C4303',
         shadowOffset: { width: 10, height: 10 },
         shadowOpacity: 0.8,
         shadowRadius: 10,
-        elevation: 8,
+        elevation: 10,
+        overflow: 'visible',
     },
 
     foto: {
         resizeMode: 'cover',
-        // margin: 15,
         width: '100%',
         height: 165,
         borderRadius: 16,
@@ -139,6 +143,8 @@ const estiloDetail = StyleSheet.create({
         paddingLeft: 30,
         paddingTop: 20,
         paddingBottom: 20,
+        paddingRight: 20,
+        
         margin: 20,
         backgroundColor: '#EFEDED',
         borderRadius: 10,

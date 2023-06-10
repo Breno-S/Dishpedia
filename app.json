@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "navegaria01",
+    "name": "Dishpedia",
     "slug": "navegaria01",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -21,10 +21,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#8C4303"
-      }
+      },
+      "package": "com.brenos.dishpedia"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "bff67eb6-417d-4c51-8655-02c41cba4215"
+      }
     }
   }
 }
