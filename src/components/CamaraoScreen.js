@@ -7,6 +7,7 @@ function CamaraoScreen( {navigation} ) {
             <ImageBackground
                 source={require('../../assets/noise.png')}
             >
+            
             <View style={estiloDetail.boxFoto}>
                 <Image
                     source={require('../../assets/strogonoff.png')}
@@ -78,7 +79,17 @@ const estiloDetail = StyleSheet.create({
     },
 
     boxFoto: {
-        padding: 15,
+        margin: 15,
+        height: 165,
+        borderRadius: 16,
+        backgroundColor: '#fff',
+        
+        shadowColor: '#8C4303',
+        shadowOffset: { width: 10, height: 10 },
+        shadowOpacity: 0.8,
+        shadowRadius: 10,
+        elevation: 8,
+        overflow: 'visible',
     },
 
     foto: {
@@ -87,12 +98,6 @@ const estiloDetail = StyleSheet.create({
         height: 165,
         borderRadius: 16,
         alignSelf: 'center',
-
-        shadowColor: '#8C4303',
-        shadowOffset: { width: 10, height: 10 },
-        shadowOpacity: 0.8,
-        shadowRadius: 10,
-        elevation: 8,
     },
 
     tempoDiv: {
